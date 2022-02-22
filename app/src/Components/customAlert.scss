@@ -1,0 +1,17 @@
+.alert-header {
+    color: white;
+    background-color: $warning;
+    padding: 0.5rem 1rem;
+}
+
+.info-header {
+    color: white;
+    background-color: $primary;
+    padding: 0.5rem 1rem;
+}
+
+.error-header {
+    color: black;
+    background-color: $danger;
+    padding: 0.5rem 1rem;
+}

@@ -1,0 +1,143 @@
+{
+    "env": {
+        "commonjs": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "react-app",
+        "airbnb-typescript/base",
+        "plugin:i18next/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "project": "tsconfig.json",
+        "ecmaVersion": 12
+    },
+    "plugins": [
+        "@typescript-eslint",
+        "react",
+        "i18next"
+    ],
+    "rules": {
+        "no-string-literal": 0,
+        "react/prop-types": 0,
+        "max-len": [ 2, 140],
+        "linebreak-style": 0,
+        "eslint linebreak-style": [
+            0,
+            "error",
+            "windows"
+        ],
+        "eol-last": 0,
+        "@typescript-eslint/indent": 1,
+        "@typescript-eslint/comma-dangle": [
+            2,
+            "never"
+        ],
+        "radix": 0,
+        "prefer-template": 1,
+        "no-prototype-builtins": 0,
+        "no-console": 0,
+        "import/extensions": [
+            2,
+            "never"
+        ],
+        "object-curly-newline": [
+            "error",
+            {
+                "ObjectExpression": {
+                    "multiline": true,
+                    "minProperties": 5,
+                    "consistent": true
+                },
+                "ObjectPattern": {
+                    "multiline": true
+                },
+                "ImportDeclaration": {
+                    "multiline": true
+                },
+                "ExportDeclaration": "always"
+            }
+        ],
+        "padded-blocks": [
+            2,
+            {
+                "blocks": "never",
+                "classes": "always",
+                "switches": "never"
+            },
+            {
+                "allowSingleLineBlocks": true
+            }
+        ],
+        "@typescript-eslint/lines-between-class-members": [
+            "warn",
+            "always",
+            {
+                "exceptAfterSingleLine": true
+            }
+        ],
+        "no-param-reassign": [
+            "error",
+            {
+                "props": false
+            }
+        ],
+        "operator-linebreak": [
+            "error",
+            "after",
+            {
+                "overrides": {
+                    "?": "before",
+                    ":": "before"
+                }
+            }
+        ],
+        "i18next/no-literal-string": [
+            "warn",
+            {
+                "ignore": [
+                    "\\*.scss",
+                    "utf-8"
+                ],
+                "ignoreCallee": [
+                    "console.log",
+                    "console.error",
+                    "on",
+                    "createHash",
+                    "digest",
+                    "toggle",
+                    "replace",
+                    "remove"
+                ],
+                "ignoreAttribute": [
+                    "controlId",
+                    "variant",
+                    "alt",
+                    "to",
+                    "role",
+                    "backdrop",
+                    "eventKey",
+                    "size",
+                    "as",
+                    "placement",
+                    "animation",
+                    "className",
+                    "color"
+                ],
+                "ignoreProperty": [
+                    "field",
+                    "headerFilter",
+                    "sorter",
+                    "hozAlign",
+                    "cssClass",
+                    "key",
+                    "path"
+                ]
+            }
+        ]
+    }
+}

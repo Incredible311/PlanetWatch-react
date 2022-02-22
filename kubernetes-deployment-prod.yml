@@ -1,0 +1,36 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dashboard
+  labels:
+    app: dashboard
+  namespace: pw-prod
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dashboard
+  template:
+    metadata:
+      labels:
+        app: dashboard
+    spec:
+      containers:
+      - name: dashboard
+        image: 593328819491.dkr.ecr.eu-west-3.amazonaws.com/dashboard:v2.0.6
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: dashboard
+  namespace: pw-prod
+spec:
+  selector:
+    app: dashboard
+  ports:
+  - port: 80

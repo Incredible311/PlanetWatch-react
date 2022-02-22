@@ -1,0 +1,40 @@
+@import './styleVariables';
+
+@import '~admin-lte/build/scss/AdminLTE';
+@import "~bootstrap/scss/bootstrap";
+@import '~react-tabulator/lib/styles';
+@import '~react-tabulator/lib/css/semantic-ui/tabulator_semantic-ui.min';
+
+@import './common-components/style';
+@import './Components/customAlert.scss';
+@import './Components/marker.scss';
+@import './Components/orderHeader.scss';
+@import './Components/orderTable.scss';
+@import './Sensors/sensor.scss';
+@import './Sensors/AddSensors/addSensors.scss';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main {
+  margin-top: $topBarHeight;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.tabulator-col-group, .tabulator-cell {
+  border-right: 1px solid rgba(34, 36, 38, 0.15);
+  
+  &:last-child{
+    border: 0;
+  }
+}

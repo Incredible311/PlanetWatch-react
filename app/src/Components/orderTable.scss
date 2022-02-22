@@ -1,0 +1,210 @@
+.fullTablesContainer {
+  background-color: #E5E5E5;
+}
+
+.tablesContainer {
+  width: 90%;
+}
+
+.billing{
+  min-width: 200px;
+}
+
+.fullTable {
+  margin-top: 4em;
+  width: 100%;
+  background-color: white;
+  border-radius: 25px;
+  color: #666666;
+}
+
+.orderTable {
+  width: 100%;
+  border-radius: 25px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  min-height: 350px;
+}
+
+.fixed-table {
+  table-layout: fixed;
+}
+
+.tableTop {
+  width: 80%;
+  height: 4em;
+  white-space: pre;
+  padding-right: 1em;
+  background-color: #DADADA;
+  border-radius: 25px 25px 0px 0px;
+}
+  
+thead tr th {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 1em;
+  padding-left: 1em;
+  color: #666666;
+  min-width: 16%;
+  word-break: break-all;
+}
+
+tbody tr td {
+  min-height: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 1em;
+  padding-left: 1em;
+  color: #8E8E8E;
+  word-break: break-word;
+  font-size: small;
+  text-align: start;
+}
+
+tbody tr {
+  border-top: 0px solid #EAEAEA;
+}
+
+tbody {
+  background-color: white;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+.full {
+  width: 100%;
+  height: 100%;
+}
+
+.verticalScroll {
+  display: block;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 10em;
+}
+
+.addButtonWrapper {
+  position: relative;
+  text-align: center;
+  margin-right: 0.6em;
+}
+
+.addButton {
+  right: 1em;
+  background-color: #9AEA3B;
+  border: none;
+  color: #0042AC;
+  font-size: 11px;
+  padding-left: 1.7em;
+  padding-right: 1.7em;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.btn-cell {
+  width: min-content;
+  min-width: 2em;
+  max-width: 3em;
+  padding: 0px;
+  
+  button {
+    margin: 0 3em 0em auto;
+  }
+}
+
+.btn-cell-add {
+  width: 6em;
+  padding: 0px;
+}
+
+.scrollbar-td {
+  margin: 2em;
+}
+
+.iconButton {
+  display: block;
+  border: none;
+  color: #0042AC;
+  font-size: 11px;
+  background-color: #9AEA3B;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  border-radius: 5px;
+  font-weight: bold;
+  width: min-content;
+}
+
+.closeButton {
+  display: block;
+  border: none;
+  color: #fff;
+  font-size: 11px;
+  background-color: #b91f1f;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
+  border-radius: 5px;
+  font-weight: bold;
+  width: min-content;
+}
+
+.spaceBottomTables {
+  position:relative;
+  height: 5rem;
+  width: 100%;
+}
+
+.order-details-td {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  color: #8E8E8E;
+  font-size: small;
+}
+
+.billing-td {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  color: #8E8E8E;
+  font-size: small;
+  min-width: 18%;
+}
+
+.tableHorizontalLine {
+  height: 1px;
+  background-color: #8E8E8E;
+  width: 100%;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.bottomLine {
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.text-right {
+  text-align: right;
+}
+
+#billing-editor {
+  input {
+    margin-right: 0.25em;
+  }
+
+  .field-small {
+    width: 40px;
+    input {
+      width: 30px;
+    }    
+  }
+}

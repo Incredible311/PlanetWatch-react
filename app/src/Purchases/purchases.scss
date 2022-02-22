@@ -1,0 +1,20 @@
+.cursor {
+    cursor: pointer;
+}
+.react-calendar {
+    margin-top: 120px;
+    position: absolute;
+    float: right;
+    right: 70px;
+    z-index: 200;
+}
+.rmdp-container:nth-child(1) {
+    display:block !important;
+}
+.rmdp-input {
+    width: 100% !important;
+}
+.calendar-button {
+    margin: 5px 5px 0 0;
+
+}

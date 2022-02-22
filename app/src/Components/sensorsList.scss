@@ -1,0 +1,118 @@
+#header-wrapper {
+    display: flex;
+    align-items: center;
+
+    #sensor-info {
+        font-size: 24px;
+        font-weight: 700;
+        margin-right: 3em;
+
+        span {
+            font-weight: 500;
+        }
+    }
+
+    #sensors-search {
+        flex-grow: 3;
+        padding: 1em;
+        // border-radius: 1em;
+        background: #FFF;
+        color: #000;
+        // font-family: "Raleway";
+
+        .col,
+        .col-5 {
+            display: flex;
+            align-items: center;
+
+            .label {
+                font-size: 12px;
+                font-weight: 400;
+            }
+
+            input {
+                width: fit-content;
+                margin-left: 1em;
+                border-radius: 5px;
+                height: 28px;
+            }
+        }
+    }
+}
+
+.page-item.active {
+    .page-link {
+        background-color: #0042AC;
+        border-color: #0042AC;
+    }
+}
+
+.na-data {
+    color: #CC000C;
+}
+
+.history {
+    color: #666666;
+    width: 100%;
+    background: #e9eef5;
+
+    td:first-child {
+        visibility: hidden;
+    }
+
+    td {
+        text-align: center;
+        border: 2px solid #fff !important;
+    }
+}
+
+#sensors-table {
+    // font-family: "Raleway";
+
+    width: 100%;
+    margin-top: 2em;
+    // border-radius: 2em;
+    overflow: hidden;
+
+    th,
+    td {
+        padding: 1em;
+        border-left: 2px solid #e5ecf8;
+        border-bottom: 2px solid #e5ecf8;
+        font-size: 14px;
+        font-weight: 500;
+        background: white;
+    }
+
+    th {
+        background: #e5ecf8;
+        color: black;
+        font-weight: 700;
+        border: 2px solid #fff;
+    }
+
+    th:first-child() {
+        border-top-left-radius: 4em;
+    }
+
+    .showHistory {
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .no-result {
+        text-align: center;
+    }
+}
+
+.margin-left {
+    margin-left: 1em;
+}
+
+.modal-dialog{
+    margin-left: 15vw;
+    .modal-content {
+        width: 80vw;
+    }
+}
+

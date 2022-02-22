@@ -1,0 +1,23 @@
+.columns-wrapper {
+  position: absolute;
+  z-index: 1000;
+  width: auto;
+  max-height: 50vh;
+  overflow: hidden;
+  overflow-y: auto;
+  min-width: 200px;
+  right: 1em;
+
+  label {
+    cursor: pointer;
+  }
+  
+}
+
+.manage-columns-button {
+  cursor: pointer;
+  
+  span {
+    margin-right: 0.5em;
+  }
+}
